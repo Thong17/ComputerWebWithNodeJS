@@ -1,0 +1,59 @@
+extends layout
+block content
+    .parallax-window(data-parallax='scroll', data-image-src='/img/img2.jpg')
+        #caption
+            button#button.animated.fadeIn.px-3.mb-2.rounded Click me
+            #container.w-50
+                p.animated.fadeIn Lipsum dolor sit amet consectetur adipisicing elit. Architecto illum suscipit est, harum possimus nihil ullam, eum nemo facere tempore sequi nobis cupiditate repellendus assumenda deleniti dicta. Animi, dolores nesciunt?
+        br
+    #img-container
+        .square
+            .img-content
+                h1 Section
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ex, dolor itaque saepe iusto tempore possimus voluptate ut sapiente sed nihil voluptas praesentium ab numquam vero. Aperiam sit fugiat delectus.
+        
+    #container-full(style="background-color: #f2f2f2; height: 80vh;")
+    .section
+    #chapternav
+        #container
+            ul
+                li
+                    a(href="") First
+                li 
+                    a(href="") Second
+    
+    #container
+        p.wow.heartBeat(data-wow-delay="0s") Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, ab. Ad ut alias odio, corporis autem deleniti assumenda, cupiditate at doloribus quis quia hic suscipit fuga eveniet ipsa, illo accusantium!
+        p.wow.jello(data-wow-delay="0s") Lorem ipsum dolor sit amet consectetur adipisicing elit. In ducimus autem nisi! Tempore, debitis sunt ut ullam in accusantium voluptatibus nihil nemo quo ab dignissimos minus reiciendis? Minima, quibusdam commodi.
+        p.wow.fadeInRight(data-wow-delay="0s") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestiae minima qui ducimus ut! Recusandae nulla facere repudiandae nisi eligendi error fugit omnis earum beatae. Odit suscipit vitae nesciunt rerum?
+        p.wow.fadeInLeft(data-wow-delay="0s") Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, ab. Ad ut alias odio, corporis autem deleniti assumenda, cupiditate at doloribus quis quia hic suscipit fuga eveniet ipsa, illo accusantium!
+        p.wow.fadeInRight(data-wow-delay="0s") Lorem ipsum dolor sit amet consectetur adipisicing elit. In ducimus autem nisi! Tempore, debitis sunt ut ullam in accusantium voluptatibus nihil nemo quo ab dignissimos minus reiciendis? Minima, quibusdam commodi.
+        p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestiae minima qui ducimus ut! Recusandae nulla facere repudiandae nisi eligendi error fugit omnis earum beatae. Odit suscipit vitae nesciunt rerum?
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, ab. Ad ut alias odio, corporis autem deleniti assumenda, cupiditate at doloribus quis quia hic suscipit fuga eveniet ipsa, illo accusantium!
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. In ducimus autem nisi! Tempore, debitis sunt ut ullam in accusantium voluptatibus nihil nemo quo ab dignissimos minus reiciendis? Minima, quibusdam commodi.
+        p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestiae minima qui ducimus ut! Recusandae nulla facere repudiandae nisi eligendi error fugit omnis earum beatae. Odit suscipit vitae nesciunt rerum?
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, ab. Ad ut alias odio, corporis autem deleniti assumenda, cupiditate at doloribus quis quia hic suscipit fuga eveniet ipsa, illo accusantium!
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. In ducimus autem nisi! Tempore, debitis sunt ut ullam in accusantium voluptatibus nihil nemo quo ab dignissimos minus reiciendis? Minima, quibusdam commodi.
+        p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestiae minima qui ducimus ut! Recusandae nulla facere repudiandae nisi eligendi error fugit omnis earum beatae. Odit suscipit vitae nesciunt rerum?
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, ab. Ad ut alias odio, corporis autem deleniti assumenda, cupiditate at doloribus quis quia hic suscipit fuga eveniet ipsa, illo accusantium!
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. In ducimus autem nisi! Tempore, debitis sunt ut ullam in accusantium voluptatibus nihil nemo quo ab dignissimos minus reiciendis? Minima, quibusdam commodi.
+        p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestiae minima qui ducimus ut! Recusandae nulla facere repudiandae nisi eligendi error fugit omnis earum beatae. Odit suscipit vitae nesciunt rerum?
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, ab. Ad ut alias odio, corporis autem deleniti assumenda, cupiditate at doloribus quis quia hic suscipit fuga eveniet ipsa, illo accusantium!
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. In ducimus autem nisi! Tempore, debitis sunt ut ullam in accusantium voluptatibus nihil nemo quo ab dignissimos minus reiciendis? Minima, quibusdam commodi.
+        p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestiae minima qui ducimus ut! Recusandae nulla facere repudiandae nisi eligendi error fugit omnis earum beatae. Odit suscipit vitae nesciunt rerum?
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, ab. Ad ut alias odio, corporis autem deleniti assumenda, cupiditate at doloribus quis quia hic suscipit fuga eveniet ipsa, illo accusantium!
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. In ducimus autem nisi! Tempore, debitis sunt ut ullam in accusantium voluptatibus nihil nemo quo ab dignissimos minus reiciendis? Minima, quibusdam commodi.
+        p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestiae minima qui ducimus ut! Recusandae nulla facere repudiandae nisi eligendi error fugit omnis earum beatae. Odit suscipit vitae nesciunt rerum?
+    script.
+        new WOW().init({
+    
+        });
+        function square() {
+            var width = $('.square').outerWidth();  
+            console.log(width);
+            width = width-130;
+            $('.square').css('height', width);
+        }
+        $(document).ready(function() {square();});
+        $(window).resize(function() {square();});
+        square();
